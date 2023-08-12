@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Laba.Views.AboutApp">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image WidthRequest="280" HeightRequest="140" Aspect="AspectFill" Source ="Ja.png" VerticalOptions="Center"></Image>
+            <Label x:Name="EProg" Text="Executive Producer" TextDecorations="Underline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="BittahLover" TextDecorations="None" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{DynamicResource BackGroundColor}"/>
+            <Label x:Name="ProgE" Text="ProgEngineer" TextDecorations="Underline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="BittahLover" TextDecorations="None" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{DynamicResource BackGroundColor}"/>
+            <Label x:Name="ArtAndDesign" Text="Art and Design" TextDecorations="Underline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="nokkkcha" TextDecorations="None" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{DynamicResource BackGroundColor}"/>
+            <Label x:Name="ProjM" Text="Project Manager" TextDecorations="Underline" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Medium"/>
+            <Label Text="BittahLover" TextDecorations="None" VerticalOptions="Center" HorizontalOptions="Center" TextColor="{DynamicResource BackGroundColor}"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="VKontakte" FontSize="Title" ForegroundColor="{DynamicResource BackGroundColor}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToSO" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Instagram" FontSize="Title" ForegroundColor="{DynamicResource BackGroundColor}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToSOO" />
+                </Label.GestureRecognizers>
+            </Label>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Telegram" FontSize="Title" ForegroundColor="{DynamicResource BackGroundColor}"/>
+                    </FormattedString>
+                </Label.FormattedText>
+
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="GoToSOOO" />
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

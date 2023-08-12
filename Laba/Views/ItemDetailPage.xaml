@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Laba.Views.ItemDetailPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{Binding BackGroundColor}">
+    <ContentPage.Content>
+        <StackLayout>
+            <ScrollView>
+                <StackLayout>
+                    <StackLayout Margin="15" Orientation="Horizontal">
+                        <Image Aspect="AspectFill" Source="{Binding ImagePath}" HeightRequest="270"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                            <Label x:Name="desyear" TextColor="White" FontAttributes="Bold" Text="Год : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Micro" TextColor="White" FontAttributes="Italic" Margin="10,0,0,0" Text="{Binding Year}"  HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="descountry" TextColor="White" FontAttributes="Bold" Text="Страна : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label x:Name="bindkin" TextColor="White" FontAttributes="Italic" Margin="10,0,0,0" Text="Пример"  HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="desmotto" TextColor="White" FontAttributes="Bold" Text="Слоган : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Micro" TextColor="White" Margin="10,0,0,0" Text="{Binding Motto}"  HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="desproduser" TextColor="White" FontAttributes="Bold" Text="Режиссёр : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Micro" TextColor="White" Margin="10,0,0,0" Text="{Binding Producer}"  HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="desgenre" TextColor="White" FontAttributes="Bold" Text="Жанр : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Micro" TextColor="White" Margin="10,0,0,0" Text="{Binding Genre}"  HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="desmainroles" TextColor="White" FontAttributes="Bold" Text="Главные роли : "  HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Micro" TextColor="White" Margin="10,0,0,0" Text="{Binding MainRoles}"  HorizontalOptions="StartAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="b1" Clicked="b1_Clicked" Text="В Избранное" Margin="15,0,0,0" HorizontalOptions="CenterAndExpand"/>
+                        <Button TextColor="AntiqueWhite" x:Name="b2" Clicked="b2_Clicked" Text="Удалить" HorizontalOptions="CenterAndExpand"/>
+                        <Button TextColor="AntiqueWhite" x:Name="b3" Clicked="b3_Clicked"  Margin="0,0,15,0" Text="Назад" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                    <Label x:Name="desdescription" TextColor="White" FontAttributes="Bold" Text="Описание :" HorizontalOptions="CenterAndExpand"/>
+                    <Label TextColor="White" Margin="10,0,0,0" Text="{Binding Description}"/> 
+                </StackLayout>
+            </ScrollView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

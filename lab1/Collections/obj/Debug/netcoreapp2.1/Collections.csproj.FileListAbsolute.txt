@@ -1,0 +1,11 @@
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\bin\Debug\netcoreapp2.1\Collections.deps.json
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\bin\Debug\netcoreapp2.1\Collections.runtimeconfig.json
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\bin\Debug\netcoreapp2.1\Collections.runtimeconfig.dev.json
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\bin\Debug\netcoreapp2.1\Collections.dll
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\bin\Debug\netcoreapp2.1\Collections.pdb
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.csprojAssemblyReference.cache
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.csproj.CoreCompileInputs.cache
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.AssemblyInfoInputs.cache
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.AssemblyInfo.cs
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.dll
+E:\University\second-year\isp\prilozuhi\Laba\lab1\Collections\obj\Debug\netcoreapp2.1\Collections.pdb

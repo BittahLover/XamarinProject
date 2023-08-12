@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Laba.Views.Search">
+    <ContentPage.Content>
+        <StackLayout x:Name="stack">
+            <SearchBar BackgroundColor="White" TextChanged="searchbar_TextChanged" x:Name="searchbar" Margin="0,0,20,0" Placeholder="Введите для поиска"/>
+            <StackLayout BackgroundColor="{DynamicResource BackGroundColor}" Padding="0,6,0,0" Orientation="Horizontal" HorizontalOptions="Fill">
+                <Picker SelectedIndexChanged="picker_SelectedIndexChanged" x:Name="picker" TextColor="White" Margin="15,0,0,0" FontSize="Small" Title="Страна" HorizontalOptions="StartAndExpand" WidthRequest="65" >
+                    <Picker.Items>
+                        <x:String>All</x:String>
+                        <x:String>Usa</x:String>
+                        <x:String>France</x:String>
+                        <x:String>Germany</x:String>
+                        <x:String>Britain</x:String>
+                        <x:String>Italy</x:String>
+                        <x:String>Ussr</x:String>
+                    </Picker.Items>
+                </Picker>
+                <Label x:Name="labelfavorite" TextColor="White" VerticalOptions="CenterAndExpand" Text="Избранное" HorizontalOptions="End"/>
+                <Switch Toggled="switch1_Toggled" x:Name="switch1" Margin="0,0,15,0" HorizontalOptions="End" OnColor="White">
+                </Switch>
+            </StackLayout>
+            <ListView ItemSelected="OnItemSelected" Margin="0,-6,0,0" VerticalOptions="FillAndExpand" x:Name="itemsList1" ItemsSource="{Binding}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell >
+                            <ViewCell.View>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Margin="15,0,0,0" Text="{Binding Title}" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                                    <Image Source="{Binding ImagePath}" HorizontalOptions="End"/>
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

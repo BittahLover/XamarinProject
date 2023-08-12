@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Laba.Views"
+             mc:Ignorable="d"
+             x:Class="Laba.Views.MainPage"
+            
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             BarBackgroundColor="{DynamicResource TabbedBarColor}"
+             NavigationPage.HasNavigationBar="false">
+    <TabbedPage.Children>
+            <local:Films x:Name="p_main" IconImageSource="Filmy"/>
+            <local:Search x:Name="p_search" IconImageSource="Search"/>
+            <local:Options x:Name="p_settings" IconImageSource="Options"/>
+    </TabbedPage.Children>
+</TabbedPage> 

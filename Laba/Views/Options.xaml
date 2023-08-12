@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:Laba"
+             mc:Ignorable="d"
+             x:Class="Laba.Views.Options">
+    <StackLayout>
+        <StackLayout>
+            <TableView BackgroundColor="{DynamicResource BackGroundColor}" VerticalOptions="Start" HeightRequest="180">
+                <TableView.Root>
+                    <TableRoot>
+                        <TableSection TextColor="White" Title="Персональные данные" x:Name="table_title1">
+                            <ViewCell>
+                                <StackLayout BackgroundColor="White">
+                                    <Button HorizontalOptions="FillAndExpand" TextColor="Black" BackgroundColor="White" Clicked="table_switch1_Clicked" Margin="45, 0, 45, 0" CornerRadius="25" Text="Поменять тему" x:Name="table_switch1"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                        <TableSection TextColor="White" Title="Контакты" x:Name="table_title2">
+                            <ViewCell>
+                                <StackLayout BackgroundColor="White">
+                                    <Button HorizontalOptions="FillAndExpand" TextColor="Black" BackgroundColor="White" Clicked="table_switch2_Clicked" Margin="45, 0, 45, 0" CornerRadius="25" Text="Поменять язык" x:Name="table_switch2"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </TableSection>
+                    </TableRoot>
+                </TableView.Root>
+            </TableView>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="Center">
+            <Button HorizontalOptions="Start" TextColor="Black" BackgroundColor="{DynamicResource BackGroundColor}" Clicked="table_switch3_Clicked" Margin="45, 0, 45, 0" CornerRadius="25" Text="Информация об разработчике" x:Name="table_switch3"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
